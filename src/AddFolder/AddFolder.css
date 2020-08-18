@@ -1,0 +1,38 @@
+.addFolder {
+    background-color: #030f1f;
+    width: 350px;
+    display: block;
+    float: left;
+}
+
+.addFolder h2 {
+    background-color: #030f1f;
+    color: #b5b3b3;
+    display: block;
+    float: left;
+    font-family: var(--custom-font);
+    font-size: 25px;
+    margin: 0 0 8px auto;
+    max-width: 300px;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.folderName {
+    width: 350px;
+    color: #b5b3b3;
+    display: block;
+    float: left;
+    margin: 0 0 0 auto;
+    padding: 0 0 0 16px;
+}
+
+#folderName {
+    margin: 2px 15px 20px 15px;
+    padding: 0 0 0 16px;
+}
+
+.addFolder-button {
+    margin: 2px 15px 20px 15px;
+    text-align: center;
+}

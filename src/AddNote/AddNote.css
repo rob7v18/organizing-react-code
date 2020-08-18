@@ -1,0 +1,20 @@
+.AddNote-Form {
+    background-color: #030f1f;
+    width: 450px;
+    display: block;
+    float: left;
+}
+
+.AddNote-Form label {
+    width: 350px;
+    color: #b5b3b3;
+    display: block;
+    float: left;
+    margin: 0 0 0 auto;
+    padding: 0 0 0 16px;
+}
+
+.AddNote-Form input, select{
+    margin: 2px 15px 20px 15px;
+    padding: 0 0 0 16px;
+}

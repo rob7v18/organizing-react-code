@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Note from '../Note/Note'
 import CircleButton from '../CircleButton/CircleButton'
 import ApiContext from '../ApiContext'
+import LoadingError from '../LoadingError'
 import { getNotesForFolder } from '../notes-helpers'
 import './NoteListMain.css'
 
@@ -24,11 +25,14 @@ export default class NoteListMain extends React.Component {
         <ul>
           {notesForFolder.map(note =>
             <li key={note.id}>
-              <Note
-                id={note.id}
-                name={note.name}
-                modified={note.modified}
-              />
+              <LoadingError key={note.id}>
+                <Note
+                  id={note.id}
+                  name={note.name}
+                  modified={note.modified}
+                />
+              </LoadingError>  
+              
             </li>
           )}
         </ul>

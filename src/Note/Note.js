@@ -4,6 +4,7 @@ import { format } from 'date-fns'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ApiContext from '../ApiContext'
 import config from '../config'
+import PropTypes from 'prop-types'
 import './Note.css'
 
 export default class Note extends React.Component {
@@ -44,6 +45,8 @@ export default class Note extends React.Component {
         <h2 className='Note__title'>
           <Link to={`/note/${id}`}>
             {name}
+            
+            
           </Link>
         </h2>
         <button
@@ -68,3 +71,11 @@ export default class Note extends React.Component {
     )
   }
 }
+
+Note.propTypes = {
+  modified: PropTypes.string,
+  name: PropTypes.string,
+  id: PropTypes.number,
+};
+
+
