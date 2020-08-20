@@ -3,6 +3,7 @@
     width: 450px;
     display: block;
     float: left;
+    color: #b5b3b3;
 }
 
 .AddNote-Form label {
@@ -17,4 +18,5 @@
 .AddNote-Form input, select{
     margin: 2px 15px 20px 15px;
     padding: 0 0 0 16px;
+    width: 250px;
 }

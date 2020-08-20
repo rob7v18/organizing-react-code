@@ -1,4 +1,5 @@
 import React from 'react';
+import './ValidateForm.css'
 
 export default function ValidateForm(props) {
   console.log('in val', props.message)

@@ -6,6 +6,7 @@ import CircleButton from '../CircleButton/CircleButton'
 import ApiContext from '../ApiContext'
 import LoadingError from '../LoadingError'
 import { getNotesForFolder } from '../notes-helpers'
+import PropTypes from 'prop-types'
 import './NoteListMain.css'
 
 export default class NoteListMain extends React.Component {
@@ -52,3 +53,14 @@ export default class NoteListMain extends React.Component {
     )
   }
 }
+
+NoteListMain.propTypes = {
+  folderId: PropTypes.string.isRequired,
+  notes: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    modified: PropTypes.number,
+    folderId: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+  }))
+};
